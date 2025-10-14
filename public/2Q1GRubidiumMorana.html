@@ -2,24 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Grade 9 Rubidium Class Schedule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Rubidium '29 Schedule</title>
+  <meta name="description" content="A simple Grade 9 template with favicon, meta tags, navigation, and footer.">
+  <meta name="author" content="Andy Morana">
+
+<link rel="icon" href="https://i.pinimg.com/736x/86/c4/a8/86c4a8e2f0c7bd2ef94f3bc0794e08b8.jpg" sizes="any">
+<link rel="icon" type="image/jpg" href="https://i.pinimg.com/736x/86/c4/a8/86c4a8e2f0c7bd2ef94f3bc0794e08b8.jpg">
+
   <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #1c9404;
+      color: rgb(4, 255, 4);
+    }
     table {
       border-collapse: collapse;
       width: 35%;
+      padding: 50px;
+      margin-left: auto;
+      margin-right: auto;
     }
     th, td {
-      border: 1px solid #999;
-      padding: 10px;
+      border: 1px solid #0adf2e;
+      padding: 25px;
     }
     th {
-      background-color: #f2f2f2;
+      background-color: #2ec707;
+      padding: 25px;
+    }
+    ul {
+      list-style-type: none;
+      font-family: Tahoma, sans-serif;
+      font-size: 50px;
     }
   </style>
 </head>
 <body>
 
-  <h2 style="text-align: left;">Rubidium '29 Monday Schedule</h2>
+  <h1 style="text-align: center;">Rubidium '29 Schedule</h1>
+  <h2 style="text-align: center;">Monday</h2>
 
   <table>
     <thead>
@@ -82,9 +107,35 @@
     </tbody>
   </table>
 
+  <header>
+    <nav aria-label="Main Navigation">
+      <a class="brand" href="index.html"></a>
+      <ul class="nav-list">
+        <li><a href="https://sashalatte.github.io/CS3_2ndQtrPortfolio/public/2Q1GRubidiumChua.html" aria-current="page">Tuesday Schedule</a></li>
+        <li><a href="https://wayne-411.github.io/CS3_2NDQTRPORTFOLIO_RUBIDIUMCUETO/public/2Q1GRubidiumCueto.html" aria-current="page">Thursday Schedule</a></li>
+        <li><a href="https://banonok11.github.io/CS3_2ndQtrPortfolio_RubidiumOcampo/public/2Q1GRubidiumOcampo.html" aria-current="page">Friday Schedule</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <footer>
+    <ul class="social-list">
+      <li><a href="https://github.com/AndyMorana" target="_blank" rel="noopener noreferrer">My GitHub :P</a></li>
+    </ul>
+  </footer>
+
+
   <img src = "https://tse1.mm.bing.net/th/id/OIP.YgVcz-j4iBfjR_S6YMXIIgHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Through Patches of Violet LMS" width="350">
 
   <iframe src="https://www.youtube.com/embed/EFr031pIlmg" height="350"></iframe>
+
+  <p class="copyright">
+  &copy; <span id="year"></span> Andy Morana. All rights reserved.
+  </p>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
