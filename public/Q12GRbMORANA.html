@@ -1,0 +1,41 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Q1 2nd Graded Exercise submitted by Jan Andrew D. Morana of Rubidium</h2>
+
+    <label for="MealPrice">Meal Price:</label>
+    <input type="text" id="MealPrice"><br>
+
+    <label for="Tip">Tip:</label>
+    <input type="text" id="Tip"><br>
+
+    <label for="ServiceCharge">Service Charge:</label>
+    <input type="text" id="ServiceCharge"><br>
+
+    <p></p>
+    <button onclick="totalMeal()">Accept Input</button>
+
+    <p></p>
+    <label for="TotalMeal">Total Meal: </label>
+    <output type="text" id="TotalMeal">
+
+    <script>
+        function totalMeal() {
+
+            const mp = parseFloat(document.getElementById('MealPrice').value);
+            const tip = parseFloat(document.getElementById('Tip').value);
+            const Percentofsc = parseFloat(document.getElementById('ServiceCharge').value);
+
+            const totalCost = mp + tip + (Percentofsc / 100 * mp);
+
+            document.getElementById('TotalMeal').textContent = totalCost.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
+
