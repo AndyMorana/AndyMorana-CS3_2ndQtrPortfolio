@@ -64,3 +64,40 @@
     footer a:hover {
         text-decoration: underline;
     }
+
+    
+    .order {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .paragraph {
+        flex: 1 1 300px;
+        max-width: 400px;
+    }
+
+    .paragraph p {
+        margin-bottom: 10px;
+        text-align: justify;
+        max-width: 400px;
+        line-height: 1.5;
+        padding: 15px;
+        background-color: #02ff0e;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .visuals {
+        flex: 1 1 400px;
+        align-items: center;
+    }
+
+    .visuals iframe, .visuals img {
+        width: 100%;
+        max-width: 480px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
